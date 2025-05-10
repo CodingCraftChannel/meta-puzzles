@@ -6,6 +6,11 @@ Each puzzle is organized by name, with separate folders for each challenge and l
 
 ---
 
+📎 Original puzzle link:  
+https://www.metacareers.com/profile/coding_puzzles
+
+---
+
 ## 📂 Puzzle List
 
 | Puzzle | Levels Covered | Status |
