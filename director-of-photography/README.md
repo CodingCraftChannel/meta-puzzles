@@ -41,5 +41,5 @@ Watch the full explanation on [CodingCraft YouTube Channel](https://www.youtube.
 
 ## 💡 Files
 
-- `level_1.py`: Straightforward filtered nested loop
-- `level_2.py`: Optimized prefix sum solution
+- [`level_1.py`](level_1.py): Straightforward filtered nested loop
+- [`level_2.py`](level_2.py): Optimized prefix sum solution
