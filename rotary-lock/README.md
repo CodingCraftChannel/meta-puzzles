@@ -30,5 +30,5 @@ Watch the full explanation on [CodingCraft YouTube Channel](https://www.youtube.
 
 ## 💡 Files
 
-- `level_1.py`: Simple greedy solution for one wheel
-- `level_2.py`: Two-wheel optimization using dynamic programming
+- [`level_1.py`](level_1.py): Simple greedy solution for one wheel
+- [`level_2.py`](level_2.py): Two-wheel optimization using dynamic programming
