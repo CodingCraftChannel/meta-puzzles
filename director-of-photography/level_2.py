@@ -1,7 +1,4 @@
-# Write any import statements here
-
 def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
-  # Write your code here
   count = 0
   actors = []
   # Prefix sums: store number of photographers and backdrops seen so far
