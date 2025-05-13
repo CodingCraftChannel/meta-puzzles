@@ -1,7 +1,4 @@
-# Write any import statements here
-
 def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
-  # Write your code here
   count = 0
 
   # Collect the indices of all actors, photographers, and backdrops
@@ -33,4 +30,3 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
             count += 1
 
   return count
-  
