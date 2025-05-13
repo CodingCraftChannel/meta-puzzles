@@ -1,8 +1,6 @@
 from typing import List
-# Write any import statements here
 
 def getMinProblemCount(N: int, S: List[int]) -> int:
-  # Write your code here
   max_score = max(S)
   threes = max_score // 3
 
