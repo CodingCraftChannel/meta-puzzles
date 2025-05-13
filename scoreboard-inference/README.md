@@ -1,6 +1,6 @@
 # Scoreboard Inference – Meta Puzzle
 
-This puzzle is about reverse-engineering the minimum number of problems in a programming contest, given only the total scores achieved by participants.
+This puzzle comes from Meta's official interview question set.
 
 ---
 
