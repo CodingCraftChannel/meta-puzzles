@@ -1,5 +1,4 @@
 from typing import List
-# Write any import statements here
 
 def getMinCodeEntryTime(N: int, M: int, C: List[int]) -> int:
   # Helper function to compute the shortest distance between two positions on the circular lock
