@@ -18,6 +18,7 @@ https://www.metacareers.com/profile/coding_puzzles
 | [Director of Photography](./director-of-photography) | Level 1 & 2 | ✅ Done |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
+| [Stack Stabilization](./stack-stabilization) | Level 1 & 3 | ✅ Done |
 | *(More coming soon...)* | – | 🚧 In progress |
 
 ---
