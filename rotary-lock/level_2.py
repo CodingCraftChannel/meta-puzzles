@@ -32,4 +32,3 @@ def getMinCodeEntryTime(N: int, M: int, C: List[int]) -> int:
     tree = next_tree
 
   return min(tree.values())
-  
