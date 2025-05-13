@@ -1,8 +1,6 @@
 from typing import List
-# Write any import statements here
 
 def getMinProblemCount(N: int, S: List[int]) -> int:
-  # Write your code here
   one_point_problem_count = 0
   two_point_problem_count = 0
 
