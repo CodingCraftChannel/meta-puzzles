@@ -1,6 +1,6 @@
 # Rotary Lock – Meta Puzzle
 
-This puzzle comes from Meta's interview set and models the rotation of a lock with one or two wheels.
+This puzzle comes from Meta's official interview question set.
 
 ---
 
