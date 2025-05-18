@@ -15,6 +15,7 @@ https://www.metacareers.com/profile/coding_puzzles
 
 | Puzzle | Levels Covered | Status |
 |--------|----------------|--------|
+| [Boss Fight](./boss-fight) | Level 3 | ✅ Done |
 | [Director of Photography](./director-of-photography) | Level 1 & 2 | ✅ Done |
 | [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | In progress |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
