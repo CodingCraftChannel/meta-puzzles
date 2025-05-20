@@ -17,7 +17,7 @@ https://www.metacareers.com/profile/coding_puzzles
 |--------|----------------|--------|
 | [Boss Fight](./boss-fight) | Level 3 | ✅ Done |
 | [Director of Photography](./director-of-photography) | Level 1 & 2 | ✅ Done |
-| [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | In progress |
+| [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | 🚧 In progress |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
 | [Stack Stabilization](./stack-stabilization) | Level 1 & 3 | ✅ Done |
