@@ -27,4 +27,3 @@ def getMaxDamageDealt(N: int, H: List[int], D: List[int], B: int) -> float:
     best_warrior = next_best
 
   return max_damage / B
-  
