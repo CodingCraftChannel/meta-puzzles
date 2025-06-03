@@ -18,6 +18,7 @@ https://www.metacareers.com/profile/coding_puzzles
 | [Boss Fight](./boss-fight) | Level 3 | ✅ Done |
 | [Cafeteria](./cafeteria) | Level 1 | ✅ Done |
 | [Director of Photography](./director-of-photography) | Level 1 & 2 | ✅ Done |
+| [Kaitenzushi](./kaitenzushi) | Level 1 | ✅ Done |
 | [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | 🚧 In progress |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
