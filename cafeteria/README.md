@@ -53,7 +53,7 @@ Instead, we:
 
 ### Key Formula:
   For any gap of size `L`, we can place:  
-  ⌊ L / (K + 1) ⌋ new diners
+  `⌊ L / (K + 1) ⌋` new diners
 
 ### Edge Segments:
 We also check the very beginning (`1` to first blocked seat) and  
