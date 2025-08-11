@@ -53,6 +53,7 @@ We can always move frogs so that in each second the minimum occupied pad increas
 Once it reaches `N`, all frogs have exited.
 
 **Final formula:**
+
 `seconds = N - min(P)`
 
 **Time Complexity:** **O(F)** – single pass to find the smallest pad.  
