@@ -20,6 +20,7 @@ https://www.metacareers.com/profile/coding_puzzles
 | [Director of Photography](./director-of-photography) | Level 1 & 2 | ✅ Done |
 | [Hops](./hops) | Level 2 | ✅ Done |
 | [Kaitenzushi](./kaitenzushi) | Level 1 | ✅ Done |
+| [Missing Mail](./missing-mail) | Level 2 | ✅ Done |
 | [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | 🚧 In progress |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
