@@ -8,20 +8,25 @@ def getMaxExpectedProfit(N: int, V: List[int], C: int, S: float) -> float:
     return sum(max(0.0, float(x) - C) for x in V)
 
   survive = 1.0 - S
-  states = [(0.0, 0.0)]
+  states = [(0.0, 0.0)]  # (profit, stash)
   best = 0.0
   
   for day in range(N):
     next_states = []
+
     for profit, stash in states:
+      # Take: collect everything today, pay C, stash resets
       take_profit = profit + V[day] + stash - C
       if take_profit > best:
         next_states.append((take_profit, 0.0))
         best = take_profit
+      # Skip: add today's package; theft may wipe stash
       next_stash = (stash + V[day]) * survive
-      if (profit + next_stash) < best:
+      if (profit + next_stash) < best:  # prune hopeless states
         continue
+
       next_states.append((profit, next_stash))
+
     states = next_states
 
   return best
