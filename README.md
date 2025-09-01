@@ -25,6 +25,7 @@ https://www.metacareers.com/profile/coding_puzzles
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
 | [Stack Stabilization](./stack-stabilization) | Level 1 & 3 | ✅ Done |
+| [Tunnel Time](./tunnel-time) | Level 2 | ✅ Done |
 | [Uniform Integers](./uniform-integers) | Level 1 | ✅ Done |
 | *(More coming soon...)* | – | 🚧 In progress |
 
