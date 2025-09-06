@@ -36,7 +36,9 @@ Choose two distinct warriors to **maximize the total damage dealt to the boss** 
 ---
 
 ## ✅ Levels Covered
-- **Level 3**: Efficient greedy refinement – handles `N ≤ 500,000` in practice, despite theoretical O(N²)
+- **Level 3**:
+  - Brute force with pruning — simpler, often fast enough in practice
+  - Li Chao segment tree — fully optimized, handles worst-case efficiently
 
 ---
 
@@ -47,25 +49,38 @@ Watch the full explanation on [CodingCraft YouTube Channel](https://www.youtube.
 
 ## 🧠 Solution Summary
 
-### Explanation
+We implemented two different approaches for Level 3:
 
-Despite the worst-case time complexity of **O(N²)**, this algorithm usually finds the correct solution in **O(N)**.  
-We can make really good guesses about the best warriors simply by:
-- Picking a random warrior `A`
-- Finding the best warrior `B` to partner with `A`
-- Repeating the process with `B` to find `C`, and so on  
-until the total damage no longer improves.
+### 1. Brute Force with Pruning (`level_3_brute_force.py`)
+- Sort warriors twice: by health (descending) and by damage (descending).  
+- Iterate over possible front-line warriors, and for each, prune backup candidates by checking only those that improve health.  
+- Compute total damage as: `total = H_front * D_front + H_back * D_back + max(H_front * D_back, H_back * D_front)`.
+- Pruning ensures we avoid full O(N²) scanning, making it efficient in practice even for N up to ~5e5, though the theoretical complexity is still `O(N²)` **worst-case**.
+- Easy to implement and passes all test cases.
 
-This solution uses a greedy iterative strategy:
-- Tracks a "best front-line warrior"
-- Iteratively tests all possible backups
-- Quickly converges to an optimal or near-optimal pair
+**Complexities:**  
+- **Time:** `~O(N log N)` for sorting + pruned iterations (practically efficient, worst-case `O(N²)`)  
+- **Space:** `O(N)`
 
-Time Complexity: Practically close to **O(N)**  
-Space Complexity: **O(N)** (for precomputed damage array)
+### 2. Optimized Li Chao Segment Tree (`level_3.py`)
+- Reformulate the problem as maximizing a linear function over possible health values.  
+- The overlap term `max(H_front * D_back, H_back * D_front)` can be represented as lines (`y = m·x + b`) depending on warrior stats.  
+- Use a **Li Chao Segment Tree** to maintain maximum values over ranges and query efficiently.  
+- This approach ensures guaranteed `O(N log C)` complexity, where `C` is the health range (`≤ 1e9`).
+
+**Complexities:**  
+- **Time:** `O(N log C)` (logarithmic factor from segment tree operations)  
+- **Space:** `O(N)` (tree storage + warrior stats)
+
+---
+
+### Comparison
+- **Brute Force with Pruning**: simpler, easier to code, fast enough in practice.  
+- **Li Chao Segment Tree**: fully optimized, handles worst-case scenarios efficiently, more complex to implement.  
 
 ---
 
 ## 💡 Files
 
+- [`level_3_brute_force.py`](level_3_brute_force.py): Brute force solution with pruning
 - [`level_3.py`](level_3.py): Optimized greedy solution
