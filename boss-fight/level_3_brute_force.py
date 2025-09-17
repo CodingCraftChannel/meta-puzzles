@@ -32,3 +32,18 @@ def getMaxDamageDealt(N: int, H: List[int], D: List[int], B: int) -> float:
       max_damage = max(max_damage, base + cross)
 
   return max_damage / B
+
+if __name__ == '__main__':
+  samples = [
+    (3, [2, 1, 4], [3, 1, 2], 4, 6.5),
+    (4, [1, 1, 2, 100], [1, 2, 1, 3], 8, 62.75),
+    (4, [1, 1, 2, 3], [1, 2, 1, 100], 8, 62.75),
+    (4, [16, 8, 12, 11], [5, 16, 12, 14], 1, 466),
+  ]
+
+  for n, h, d, b, expected in samples:
+    result = getMaxDamageDealt(n, h, d, b)
+    if result == expected:
+      print(f"OK: input=({n}, {h}, {d}, {b})")
+    else:
+      print(f"FAILED: input=({n}, {h}, {d}, {b}), got={result}, expected={expected}")
