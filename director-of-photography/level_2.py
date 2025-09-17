@@ -31,3 +31,17 @@ def getArtisticPhotographCount(N: int, C: str, X: int, Y: int) -> int:
     count += (backdrops_before_pos[left_end] - backdrops_before_pos[left_start]) * (photographers_before_pos[right_end] - photographers_before_pos[right_start])
 
   return count
+
+if __name__ == '__main__':
+  samples = [
+    (5, 'APABA', 1, 2, 1),
+    (5, 'APABA', 2, 3, 0),
+    (8, '.PBAAP.B', 1, 3, 3),
+  ]
+
+  for n, c, x, y, expected in samples:
+    result = getArtisticPhotographCount(n, c, x, y)
+    if result == expected:
+      print(f"OK: input=({n}, {c}, {x}, {y})")
+    else:
+      print(f"FAILED: input=({n}, {c}, {x}, {y}), got={result}, expected={expected}")
