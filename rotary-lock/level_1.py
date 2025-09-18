@@ -16,3 +16,16 @@ def getMinCodeEntryTime(N: int, M: int, C: List[int]) -> int:
     prev = c
 
   return count
+
+if __name__ == '__main__':
+  samples = [
+    (3, 3, [1, 2, 3], 2),
+    (10, 4, [9, 4, 4, 8], 11),
+  ]
+
+  for n, m, c, expected in samples:
+    result = getMinCodeEntryTime(n, m, c)
+    if result == expected:
+      print(f"OK: input=({n}, {m}, {c})")
+    else:
+      print(f"FAILED: input=({n}, {m}, {c}), got={result}, expected={expected}")
