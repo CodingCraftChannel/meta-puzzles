@@ -42,3 +42,17 @@ def getMaxVisitableWebpages(N: int, L: List[int]) -> int:
             current = L[current - 1]
 
     return max(max_visitable)
+
+if __name__ == '__main__':
+  samples = [
+    (4, [4, 1, 2, 1], 4),
+    (5, [4, 3, 5, 1, 2], 3),
+    (5, [2, 4, 2, 2, 3], 4),
+  ]
+
+  for n, l, expected in samples:
+    result = getMaxVisitableWebpages(n, l)
+    if result == expected:
+      print(f"OK: input=({n}, {l})")
+    else:
+      print(f"FAILED: input=({n}, {l}), got={result}, expected={expected}")
