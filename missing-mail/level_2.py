@@ -1,3 +1,4 @@
+import math
 from typing import List
 
 def getMaxExpectedProfit(N: int, V: List[int], C: int, S: float) -> float:
@@ -30,3 +31,18 @@ def getMaxExpectedProfit(N: int, V: List[int], C: int, S: float) -> float:
     states = next_states
 
   return best
+
+if __name__ == '__main__':
+  samples = [
+    (6, [10, 2, 8, 6, 4], 5, 0.0, 25.0),
+    (5, [10, 2, 8, 6, 4], 5, 1.0, 9.0),
+    (5, [10, 2, 8, 6, 4], 3, 0.5, 17.0),
+    (5, [10, 2, 8, 6, 4], 3, 0.15, 20.10825),
+  ]
+
+  for n, v, c, s, expected in samples:
+    result = getMaxExpectedProfit(n, v, c, s)
+    if math.isclose(result, expected, abs_tol=1e-6):
+      print(f"OK: input=({n}, {v}, {c}, {s})")
+    else:
+      print(f"FAILED: input=({n}, {v}, {c}, {s}), got={result}, expected={expected}")
