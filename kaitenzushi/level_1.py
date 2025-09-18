@@ -16,3 +16,17 @@ def getMaximumEatenDishCount(N: int, D: List[int], K: int) -> int:
         eaten_set.remove(eaten_list.get())
   
   return count
+
+if __name__ == '__main__':
+  samples = [
+    (6, [1, 2, 3, 3, 2, 1], 1, 5),
+    (6, [1, 2, 3, 3, 2, 1], 2, 4),
+    (7, [1, 2, 1, 2, 1, 2, 1], 2, 2),
+  ]
+
+  for n, d, k, expected in samples:
+    result = getMaximumEatenDishCount(n, d, k)
+    if result == expected:
+      print(f"OK: input=({n}, {d}, {k})")
+    else:
+      print(f"FAILED: input=({n}, {d}, {k}), got={result}, expected={expected}")
