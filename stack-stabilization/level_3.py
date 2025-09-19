@@ -28,3 +28,20 @@ def getMinimumSecondsRequired(N: int, R: List[int], A: int, B: int) -> int:
               cost_for_radius[i] = min(cost_for_radius[i-1], cost_for_radius[i] + cost)
         
   return cost_for_radius[-1]
+
+if __name__ == '__main__':
+  samples = [
+    (5, [2, 5, 3, 6, 5], 1, 1, 5),
+    (3, [100, 100, 100], 2, 3, 5),
+    (3, [100, 100, 100], 7, 3, 9),
+    (4, [6, 5, 4, 3], 10, 1, 19),
+    (4, [100, 100, 1, 1], 2, 1, 207),
+    (6, [6, 5, 2, 4, 4, 7], 1, 1, 10),
+  ]
+
+  for n, r, a, b, expected in samples:
+    result = getMinimumSecondsRequired(n, r, a, b)
+    if result == expected:
+      print(f"OK: input=({n}, {r}, {a}, {b})")
+    else:
+      print(f"FAILED: input=({n}, {r}, {a}, {b}), got={result}, expected={expected}")
