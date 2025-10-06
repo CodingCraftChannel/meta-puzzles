@@ -22,6 +22,7 @@ https://www.metacareers.com/profile/coding_puzzles
 | [Kaitenzushi](./kaitenzushi) | Level 1 | ✅ Done |
 | [Missing Mail](./missing-mail) | Level 2 | ✅ Done |
 | [Rabbit Hole](./rabbit-hole) | Level 2 & 3 | 🚧 In progress |
+| [Portals](./portals) | Level 2 | ✅ Done |
 | [Rotary Lock](./rotary-lock) | Level 1 & 2 | ✅ Done |
 | [Scoreboard Inference](./scoreboard-inference) | Level 1 & 2 | ✅ Done |
 | [Stack Stabilization](./stack-stabilization) | Level 1 & 3 | ✅ Done |
